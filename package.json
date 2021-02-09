@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": false,
   "scripts": {
+    "release": "auto shipit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,9 @@
     "url": "https://github.com/kelmancelis/eslint-config/issues"
   },
   "homepage": "https://github.com/kelmancelis/eslint-config#readme",
+  "dependencies": {
+    "auto": "10.16.0"
+  },
   "peerDependencies": {
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.1.0",
@@ -41,5 +45,11 @@
     "eslint-plugin-react": "7.20.0",
     "eslint-plugin-react-hooks": "4.0.4",
     "prettier": "2.0.5"
+  },
+  "auto": {
+    "plugins": [
+      "npm"
+    ],
+    "onlyPublishWithReleaseLabel": true
   }
 }
